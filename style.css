@@ -1,0 +1,59 @@
+body{
+  background-color: lightgrey;
+}
+
+.bildegrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+.bildegrid img{
+  width: 100%;
+}
+@media (max-width: 1400px){
+.bildegrid{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+@media (max-width: 900px){
+.bildegrid{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media (max-width: 600px){
+.bildegrid{
+  grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 1000px){
+body{
+  background-color: green;
+}
+}
+@media (max-width: 1400px){
+body{
+  background-color: yellow;
+}
+}
+@media (max-width: 800px){
+body{
+  background-color: red;
+}
+}
+@media (max-width: 600px){
+body{
+  background-color: blue;
+}
+}
+/*
+@media (max-width: 1400px){
+  body{
+    background-image: url("bilder-oscar/cmbyn.jpg");
+  }
+}
+@media (max-width: 1000px){
+  body{
+    background-image: url("darkest_hour.png");
+  }
+}*/
